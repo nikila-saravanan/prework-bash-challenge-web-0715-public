@@ -41,7 +41,7 @@ describe "Bash Challenge" do
       -rw-r--r--   1 janedoe  staff   1.2K Jan  5 12:42 README.md
       drwxr-xr-x   4 janedoe  staff   136B Jan  5 12:42 spec" do
 
-      your_answer = "ls -l"
+      your_answer = "ls -lah"
       expect(your_answer).to eq(answer_6)
     end
 
@@ -51,7 +51,7 @@ describe "Bash Challenge" do
     end
 
     it 'shows us what our path is' do 
-      your_answer = "pwd"
+      your_answer = "echo $PATH"
       expect(your_answer).to eq(answer_8)
     end
 
